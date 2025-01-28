@@ -57,6 +57,9 @@ loginSaweria('email@gmail.com', 'password', 'apikey')
   }
 }
 ```
+
+---
+
 ###  Saweria Create Payment
 
 Berikut adalah format data yang digunakan untuk melakukan request donation:
@@ -123,3 +126,5 @@ createSaweria('userId', 'Apikey', donationData)
   }
 }
 ```
+
+---
