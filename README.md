@@ -1,27 +1,39 @@
-# Saweria API Integration
+# Kropa-API
 
-This project provides a simple integration with the Saweria API to check the status of donations using QRIS. It offers an easy-to-use function to retrieve the status of a donation based on the provided donation ID.
+Kropa-API adalah library Node.js sederhana untuk mempermudah akses ke berbagai fitur API yang Anda butuhkan. Pastikan menggunakan versi terbaru untuk pengalaman yang lebih baik.
 
-## Requirements
+---
 
-- Node.js (v12 or higher)
-- NPM (v6 or higher)
-- [Axios](https://www.npmjs.com/package/axios) (for making HTTP requests)
+## **Fitur**
+- Placeholder untuk versi awal (v1.0.0).
+- Versi terbaru berisi berbagai fitur API yang dapat membantu proyek Anda.
 
-## Installation
+---
 
-To get started with the project, follow these steps:
+## **Instalasi**
+Untuk menginstal Kropa-API, jalankan perintah berikut:
 
- API Request Example
-To interact with the Saweria API, we provide a simple function that allows you to check the status of a donation. This function makes a GET request to the Saweria API, passing the donationId to retrieve the status.
+```sh
+npm install kropaa-api@latest
+```
 
-cekStatus(donationId)
-This function checks the donation status based on the provided donation ID.
+## API Reference
 
-Parameters:
-donationId (string): The ID of the donation you want to check.
-Returns:
-An object containing the status and message of the donation:
-status: Either false, true.
-msg: A message that indicates the donation status 'PENDING' or 'SUKSES'.
-qrString: The QR code string.
+####  Saweria Login
+```bash 
+const { loginSaweria } = require('kropaa-api');
+
+loginSaweria('email@gmail.com', 'password')
+    .then((res) => {
+        console.log(res.data);
+    })
+    .catch((error) => {
+        console.error(error.message);
+    });
+	
+[Result](https://clayza.biz.id/ClayzaAubert/API-Sparkle-Docs/Result-Saweria-Login.json)
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `email` | `string` | **Required**. Your Email Saweria |
+| `password` | `string` | **Required**. Your Password Saweria |
