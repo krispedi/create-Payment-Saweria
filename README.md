@@ -43,7 +43,7 @@ loginSaweria('email@gmail.com', 'password', 'apikey')
         console.error(error.message);
     });
 ```
-#### response JSON
+#### Response Example
 ```json
 {
   "powered": "Powered By KropaApi",
@@ -99,7 +99,7 @@ createSaweria('userId', 'Apikey', donationData)
     });
 ```
 
-#### response JSON
+#### Response Example
 
 ```json
 {
@@ -128,3 +128,35 @@ createSaweria('userId', 'Apikey', donationData)
 ```
 
 ---
+
+### Check Status 
+`Berikut ada format data yang digunakan untuk melakukan request pengecekan status donasi`
+
+```javascript
+const { cekStatus } = require('kropaa-api');
+cekStatus('id', 'Apikey')
+  .then((res) => {
+        console.log(res.data);
+    })
+    .catch((error) => {
+        console.error(error.message);
+    });
+```
+
+#### Response Example
+##### Response Pending
+```json
+{
+  status: false,
+  msg: 'PENDING',
+  qrString: '00020101021226570011ID.DANA.WWW011893600915016937059202091693705920303UME51440014ID.CO.QRIS.WWW0215ID20210917307330303UME520473925303360540410005802ID5907saweria6015Kota Jakarta Pu61051034062720115Q4YcjGk4XhN57KZ60490011ID.DANA.WWW0425MER202107140077450960864105011630437A5'
+}
+```
+##### Response Sukses
+```json
+{
+  status: false,
+  msg: 'SUKSES',
+  qrString: ''
+}
+```
