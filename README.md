@@ -46,18 +46,16 @@ loginSaweria('email@gmail.com', 'password', 'apikey')
 `Contoh Response`
 ```json
 {
-  powered: 'Powerd By KropaApi',
-  status: true,
-  msg: 'Login Berhasil',
-  data: {
-    email: 'email@gmail.com',
-    currency: 'IDR',
-    userId: '5a583c72-7883-4bf4-a49b-sdadad',
-    username: 'username'
+  "powered": "Powered By KropaApi",
+  "status": true,
+  "msg": "Login Berhasil",
+  "data": {
+    "email": "krispedia1@gmail.com",
+    "currency": "IDR",
+    "userId": "5a583c72-7883-4bf4-a49b-bf0fac243944",
+    "username": "dipaysecure"
   }
 }
-```
-
 
 ####  Saweria Create Payment
 
