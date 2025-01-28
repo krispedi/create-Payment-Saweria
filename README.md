@@ -1,4 +1,4 @@
-# Kropa-API
+# Kropaa-API
 
 Kropa-API adalah library Node.js sederhana untuk mempermudah akses ke berbagai fitur API yang Anda butuhkan. Pastikan menggunakan versi terbaru untuk pengalaman yang lebih baik.
 
