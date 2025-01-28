@@ -6,7 +6,10 @@ Kropa-API adalah library Node.js sederhana untuk mempermudah akses ke berbagai f
 
 ## **Fitur**
 - Placeholder untuk versi awal (v1.0.0).
-- Versi terbaru berisi berbagai fitur API yang dapat membantu proyek Anda.
+- Make a donation payment
+- Check payment status
+- Login
+- Create Qris Strings Dinamis
 
 ---
 
@@ -132,8 +135,14 @@ createSaweria('userId', 'Apikey', donationData)
 ### Check Status 
 `Berikut ada format data yang digunakan untuk melakukan request pengecekan status donasi`
 
+| Field | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `string` | **Required**. Id |
+| `apikey` | `string` | **Required**. apikey  |
+
 ```javascript
 const { cekStatus } = require('kropaa-api');
+
 cekStatus('id', 'Apikey')
   .then((res) => {
         console.log(res.data);
