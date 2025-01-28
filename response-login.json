@@ -1,0 +1,13 @@
+{
+  data: {
+    powered: 'Powerd By KropaApi',
+    status: true,
+    msg: 'Login Berhasil',
+    data: {
+      email: 'kropaapi@gmail.com',
+      currency: 'IDR',
+      userid: '5a583c72-7883-4bf4-a49b-bf0fac243944',
+      username: 'dipaysecure'
+    }
+  }
+}
