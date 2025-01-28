@@ -39,7 +39,7 @@ loginSaweria('email@gmail.com', 'password', 'apikey')
 ```
 [Result](https://github.com/krispedi/create-Payment-Saweria/response-login.json)
 
-| Parameter | Type     | Description                |
+| Field | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `email` | `string` | **Required**. Your Email Saweria |
 | `password` | `string` | **Required**. Your Password Saweria |
@@ -81,4 +81,31 @@ createSaweria('userId', 'Apikey', donationData)
     .catch((error) => {
         console.error(error.message);
     });
+```
+
+*Contoh response*
+```json
+{
+  powered: 'Powered By KropaApi',
+  status: true,
+  data: {
+    data: {
+      amount: 1000,
+      amount_raw: 1000,
+      created_at: 'Tue, 28 Jan 2025 11:10:41 GMT',
+      currency: 'IDR',
+      donator: [Object],
+      donator_id: null,
+      etc: [Object],
+      id: '99df170b-0973-463f-9d8a-68cb7602af2d',
+      message: 'Haii',
+      need_notification: false,
+      payment_type: 'qris',
+      qr_string: '00020101021226570011ID.DANA.WWW011893600915016937059202091693705920303UME51440014ID.CO.QRIS.WWW0215ID20210917307330303UME520473925303360540410005802ID5907saweria6015Kota Jakarta Pu61051034062720115Q4YcjGk4XhN57KZ60490011ID.DANA.WWW0425MER202107140077450960864105011630437A5',
+      status: 'PENDING',
+      type: 'donation',
+      user_id: '5a583c72-7883-4bf4-a49b-bf0fac243944'
+    }
+  }
+}
 ```
