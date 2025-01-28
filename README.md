@@ -4,6 +4,21 @@ Kropa-API adalah library Node.js sederhana untuk mempermudah akses ke berbagai f
 
 ---
 
+# 🙏 Support The Project
+
+If you appreciate this project and would like to support its development, you can make a donation. Every contribution helps keep the project alive and ensures that it continues to grow and improve!
+
+### 💳 **Donate via Saweria**  
+You can donate using the following QR code or through the link below:
+
+**QR Code:**
+![QR Code](https://api.bkstoree.my.id/library/images/qris.jpg)
+
+### 💸 **Or Donate Directly**  
+- [Saweria Donation Link](https://saweria.co/dipaysecure)
+
+---
+
 ## **Fitur**
 - Placeholder untuk versi awal (v1.0.0).
 - Make a donation payment
