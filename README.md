@@ -26,6 +26,12 @@ npm install kropaa-api@latest
 - Kirim email ke [krispedia1@gmail.com](mailto:krispedia1@gmail.com)
 
 ####  Saweria Login
+Berikut adalah format data yang digunakan untuk melakukan request login saweria untuk melihat userId:
+
+| Field | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `email` | `string` | **Required**. Your Email Saweria |
+| `password` | `string` | **Required**. Your Password Saweria |
 ```javascript 
 const { loginSaweria } = require('kropaa-api');
 
@@ -37,12 +43,21 @@ loginSaweria('email@gmail.com', 'password', 'apikey')
         console.error(error.message);
     });
 ```
-[Result](https://github.com/krispedi/create-Payment-Saweria/response-login.json)
+`Contoh Response`
+```json
+{
+  powered: 'Powerd By KropaApi',
+  status: true,
+  msg: 'Login Berhasil',
+  data: {
+    email: 'email@gmail.com',
+    currency: 'IDR',
+    userId: '5a583c72-7883-4bf4-a49b-sdadad',
+    username: 'username'
+  }
+}
+```
 
-| Field | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `email` | `string` | **Required**. Your Email Saweria |
-| `password` | `string` | **Required**. Your Password Saweria |
 
 ####  Saweria Create Payment
 
