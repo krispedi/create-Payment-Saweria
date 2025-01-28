@@ -21,9 +21,9 @@ npm install kropaa-api@latest
 
 #### Get Apikey
 `Silahkan hubungi develover kami untuk mendapatkan Apikey`
-
-[Chat Develover]([htps://github.tcom/krispedi/create-Payment-Saweria/response-login.json](https://wa.me/62882007324217?text=Halomin))
-
+- [Hubungi saya di Telegram](https://t.me/csegenix21)  
+- [Hubungi saya di WhatsApp](https://wa.me/62882007324217)  
+- Kirim email ke [krispedia1@gmail.com](mailto:krispedia1@gmail.com)
 
 ####  Saweria Login
 ```bash 
