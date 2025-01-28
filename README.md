@@ -172,3 +172,41 @@ cekStatus('id', 'Apikey')
   "qrString": " "
 }
 ```
+---
+
+# 📣 Credits
+
+A big **thank you** to all the people and organizations that helped bring Kropa-API to life!
+
+---
+
+### 👨‍💻 **Kris**  
+**Role:** Creator & Main Developer  
+- Creator of Kropa-API and lead developer.  
+- [GitHub Profile](https://github.com/krispedi)  
+- [Whatsapp](https://wa.me/62882007324217)
+- [Telegram](https://t.me/csegenix21)
+
+---
+
+### 💳 **Saweria**  
+**Role:** Payment API Service  
+- Used for donation payments in this library.  
+- [Saweria Website](https://www.saweria.co)
+
+---
+
+### 🛠️ **Open Source Community**  
+Your contributions make this project possible!  
+- Thank you to all contributors and open-source enthusiasts for sharing your time and expertise.
+
+---
+
+### 🙏 **Special Thanks To**  
+Everyone who opened issues, submitted PRs, and provided feedback.  
+If you have suggestions or want to contribute, feel free to [open a pull request](https://github.com/krispedia/kropa-api/pulls).
+
+---
+
+Thank you for using Kropa-API! We appreciate your support. 🙌
+
