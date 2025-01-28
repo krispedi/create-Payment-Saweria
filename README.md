@@ -50,10 +50,10 @@ loginSaweria('email@gmail.com', 'password', 'apikey')
   "status": true,
   "msg": "Login Berhasil",
   "data": {
-    "email": "krispedia1@gmail.com",
+    "email": "email@gmail.com",
     "currency": "IDR",
-    "userId": "5a583c72-7883-4bf4-a49b-bf0fac243944",
-    "username": "dipaysecure"
+    "userId": "5a583c72-7883-4bf4-a49b-sdadadad",
+    "username": "username"
   }
 }
 ```
@@ -96,9 +96,8 @@ createSaweria('userId', 'Apikey', donationData)
     });
 ```
 
-*Contoh response*
-
-```bash
+`Contoh response`
+```json
 {
   powered: 'Powered By KropaApi',
   status: true,
