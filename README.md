@@ -30,7 +30,7 @@ loginSaweria('email@gmail.com', 'password')
     .catch((error) => {
         console.error(error.message);
     });
-	
+```
 [Result](https://clayza.biz.id/ClayzaAubert/API-Sparkle-Docs/Result-Saweria-Login.json)
 
 | Parameter | Type     | Description                |
