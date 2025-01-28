@@ -84,7 +84,8 @@ createSaweria('userId', 'Apikey', donationData)
 ```
 
 *Contoh response*
-```json
+
+```bash
 {
   powered: 'Powered By KropaApi',
   status: true,
