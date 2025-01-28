@@ -19,13 +19,13 @@ npm install kropaa-api@latest
 
 ## API Reference
 
-#### Get Apikey
+### Get Apikey
 `Silahkan hubungi develover kami untuk mendapatkan Apikey`
 - [Hubungi saya di Telegram](https://t.me/csegenix21)  
 - [Hubungi saya di WhatsApp](https://wa.me/62882007324217)  
 - Kirim email ke [krispedia1@gmail.com](mailto:krispedia1@gmail.com)
 
-####  Saweria Login
+###  Saweria Login
 Berikut adalah format data yang digunakan untuk melakukan request login saweria untuk melihat userId:
 
 | Field | Type     | Description                |
@@ -43,7 +43,7 @@ loginSaweria('email@gmail.com', 'password', 'apikey')
         console.error(error.message);
     });
 ```
-`Contoh Response`
+#### JSON Data Example
 ```json
 {
   "powered": "Powered By KropaApi",
@@ -57,7 +57,7 @@ loginSaweria('email@gmail.com', 'password', 'apikey')
   }
 }
 ```
-####  Saweria Create Payment
+###  Saweria Create Payment
 
 Berikut adalah format data yang digunakan untuk melakukan request donation:
 
@@ -96,7 +96,7 @@ createSaweria('userId', 'Apikey', donationData)
     });
 ```
 
-## JSON Data Example
+#### JSON Data Example
 
 ```json
 {
