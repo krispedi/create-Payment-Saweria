@@ -43,7 +43,7 @@ loginSaweria('email@gmail.com', 'password', 'apikey')
         console.error(error.message);
     });
 ```
-#### JSON Data Example
+#### response JSON
 ```json
 {
   "powered": "Powered By KropaApi",
@@ -96,7 +96,7 @@ createSaweria('userId', 'Apikey', donationData)
     });
 ```
 
-#### JSON Data Example
+#### response JSON
 
 ```json
 {
