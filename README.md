@@ -26,7 +26,7 @@ npm install kropaa-api@latest
 - Kirim email ke [krispedia1@gmail.com](mailto:krispedia1@gmail.com)
 
 ####  Saweria Login
-```bash 
+```javascript 
 const { loginSaweria } = require('kropaa-api');
 
 loginSaweria('email@gmail.com', 'password', 'apikey')
@@ -43,3 +43,42 @@ loginSaweria('email@gmail.com', 'password', 'apikey')
 | :-------- | :------- | :------------------------- |
 | `email` | `string` | **Required**. Your Email Saweria |
 | `password` | `string` | **Required**. Your Password Saweria |
+
+####  Saweria Create Payment
+
+Berikut adalah format data yang digunakan untuk melakukan request donation:
+
+| Field            | Value                   | Type       | Description                                               |
+|------------------|-------------------------|------------|-----------------------------------------------------------|
+| `amount`         | `1000`                  | number     | Jumlah donasi (dalam satuan yang sesuai)                  |
+| `message`        | `'Haii'`                | string     | Pesan yang ingin disampaikan oleh donatur                 |
+| `anonymous`      | `true`                  | boolean    | Apakah donasi anonim atau tidak                           |
+| `payment_type`   | `'qris'`                | string     | Jenis pembayaran yang digunakan (misalnya QRIS)           |
+| `customer_info`  |                         | object     | Informasi tentang pelanggan                               |
+| `- name`         | `'Saya kris'`           | string     | Nama pelanggan                                            |
+| `- email`        | `'ssss@gmail.com'`      | string     | Email pelanggan                                           |
+| `- phone`        | `'085786544568'`        | string     | Nomor telepon pelanggan                                   |
+
+```javascript
+const { createSaweria } = require('kropaa-api');
+
+const donationData = {
+  amount: 1000,
+  message: 'Haii',
+  anonymous: true,
+  payment_type: 'qris',
+  customer_info: {
+  name: 'Saya kris',
+  email: 'ssss@gmail.com',
+  phone: '085786544568',
+   },
+ };
+ 
+createSaweria('userId', 'Apikey', donationData)
+  .then((res) => {
+        console.log(res.data);
+    })
+    .catch((error) => {
+        console.error(error.message);
+    });
+```
