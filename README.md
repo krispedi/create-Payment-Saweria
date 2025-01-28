@@ -142,9 +142,9 @@ cekStatus('id', 'Apikey')
         console.error(error.message);
     });
 ```
-## JSON Response Examples
+#### JSON Response Examples
 
-### Pending Response
+##### Pending Response
 
 ```json
 {
@@ -154,7 +154,7 @@ cekStatus('id', 'Apikey')
 }
 ```
 
-### Success Response
+##### Success Response
 
 ```json
 {
