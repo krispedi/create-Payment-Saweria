@@ -31,7 +31,7 @@ loginSaweria('email@gmail.com', 'password')
         console.error(error.message);
     });
 ```
-[Result](https://clayza.biz.id/ClayzaAubert/API-Sparkle-Docs/Result-Saweria-Login.json)
+[Result](https://github.com/krispedi/create-Payment-Saweria/response-login.json)
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
